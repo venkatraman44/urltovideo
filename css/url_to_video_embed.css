@@ -1,0 +1,66 @@
+.url-to-video-container {
+  display: inline-block;
+  margin: 20px auto;
+  width: 100%;
+}
+.url-to-video-container:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.url-to-video-container.no-js {
+  border: solid black 1px;
+}
+.url-to-video-container.no-js .loader {
+  background: url(../images/no-js.png) no-repeat center center;
+  background-size: 40px 40px;
+}
+.url-to-video-container.no-js .url-to-video-player {
+  cursor: auto;
+}
+.url-to-video-container .loader {
+  vertical-align: middle;
+  display: inline-block;
+  background: #FFF url(../images/ajax-loader.gif) no-repeat center center;
+}
+.url-to-video-container .url-to-video-player {
+  /* assuming that the video has a 16:9 ratio */
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.url-to-video-container .url-to-video-player .player-thumb {
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.url-to-video-container .url-to-video-player .play-button {
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: url(../images/play-button.png) no-repeat center center;
+  background-size: 40px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.url-to-video-container .player-iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=url_to_video_embed.css.map */
